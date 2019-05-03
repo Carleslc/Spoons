@@ -1,25 +1,29 @@
-***Spoons library &amp; Hammerspoon configuration.***
+***OSX Automation. Spoons library &amp; Hammerspoon configuration.***
 
-## > [AutoClick](https://github.com/Carleslc/Spoons/blob/master/Spoons/AutoClick.spoon/html/AutoClick.html)
+# Installation
+1. Install **[Hammerspoon](http://www.hammerspoon.org/)**
+2. Click on the desired module (spoon) below to see additional documentation and download.
+
+## > [AutoClick](https://github.com/Carleslc/Spoons/blob/master/Spoons/AutoClick.spoon/markdown/AutoClick.md)
 
 *Autoclicker tool, configurable with clicks per seconds.*
 
-## > [PasswordGenerator](https://github.com/Carleslc/Spoons/blob/master/Spoons/PasswordGenerator.spoon/html/PasswordGenerator.html)
+## > [PasswordGenerator](https://github.com/Carleslc/Spoons/blob/master/Spoons/PasswordGenerator.spoon/markdown/PasswordGenerator.md)
 
 *Generate simple or strong passwords and copy them to clipboard.*
 
-## > [ReloadConfiguration](https://github.com/Carleslc/Spoons/blob/master/Spoons/ReloadConfiguration.spoon/html/ReloadConfiguration.html)
+## > [ReloadConfiguration](https://github.com/Carleslc/Spoons/blob/master/Spoons/ReloadConfiguration.spoon/markdown/ReloadConfiguration.md)
 
 *Adds a hotkey to reload the hammerspoon configuration, and a pathwatcher to automatically reload on changes.*
 
-## > [LineageAutoQuest](https://github.com/Carleslc/Spoons/blob/master/Spoons/LineageAutoQuest.spoon/html/LineageAutoQuest.html)
+## > [LineageAutoQuest](https://github.com/Carleslc/Spoons/blob/master/Spoons/LineageAutoQuest.spoon/markdown/LineageAutoQuest.md)
 
 *Lineage II Revolution Auto-Quest Bot (Nox App Player)*
 
-## > [MouseCircle](https://github.com/Carleslc/Spoons/blob/master/Spoons/MouseCircle.spoon/html/MouseCircle.html)
+## > [MouseCircle](https://github.com/Carleslc/Spoons/blob/master/Spoons/MouseCircle.spoon/markdown/MouseCircle.md)
 
 *Draws a circle around the mouse pointer when a hotkey is pressed.*
 
-### Configuration
+# Configuration
 
 See [**init.lua**](https://github.com/Carleslc/Spoons/blob/master/init.lua) for examples of Spoons **configuration** and **keybindings**.
