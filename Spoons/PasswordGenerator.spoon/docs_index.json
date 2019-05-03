@@ -17,7 +17,7 @@
     "type": "Method"
   },
   {
-    "desc": "Generates a random password and copies it to the clipboard. This method can use special characters: ABCDEFGHIJKLMNPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz123456789!\\\\#$%&()*+-./<=>?@[]^_{}~ Excludes similar characters like O and 0 or ' and \" or ` and ´ or : and ; and ,",
+    "desc": "Generates a random password and copies it to the clipboard. This method can use special characters: ABCDEFGHIJKLMNPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz123456789!\\\\#$%&()*+-./<=>?@[]^_{}~ Excludes similar characters like O and 0 or ' and \" or : and ; and ,",
     "module": "PasswordGenerator",
     "name": "strongPassword",
     "type": "Method"
