@@ -1,9 +1,9 @@
 -- [[ Hammerspoon configuration ]]
 -- Execute the following command in terminal and restart Hammerspoon:
--- defaults write org.hammerspoon.Hammerspoon MJConfigFile "~/MEGA/Hammerspoon/init.lua"
+-- defaults write org.hammerspoon.Hammerspoon MJConfigFile "~/Git/GitHub/Spoons/init.lua"
 
 HOME = os.getenv("HOME")
-hs.configdir = HOME .. "/MEGA/Hammerspoon"
+hs.configdir = HOME .. "/Git/GitHub/Spoons"
 os.execute("mkdir -p " .. HOME .. "/.hammerspoon/cache/")
 
 -- Utils

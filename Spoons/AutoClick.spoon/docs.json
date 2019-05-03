@@ -1,144 +1,250 @@
 [
   {
-    "Command": [],
-    "Constant": [],
-    "Constructor": [],
-    "Deprecated": [],
-    "Field": [],
-    "Function": [],
-    "Method": [
+    "Constant" : [
+
+    ],
+    "submodules" : [
+
+    ],
+    "Function" : [
+
+    ],
+    "Variable" : [
       {
-        "def": "AutoClick:bindHotkeys(mapping)",
-        "desc": "Binds hotkeys for AutoClick",
-        "doc": "Binds hotkeys for AutoClick\n\nParameters:\n * mapping - A table containing hotkey modifier/key details for the following items:\n  * triggerAutoClick - Start/Stop AutoClick",
-        "name": "bindHotkeys",
-        "parameters": [
-          " * mapping - A table containing hotkey modifier/key details for the following items:",
-          "  * triggerAutoClick - Start/Stop AutoClick"
+        "def" : "AutoClick.clicksPerSecond",
+        "name" : "clicksPerSecond",
+        "stripped_doc" : [
+          "Clicks per second. May not work properly if set too high (above ~50). Defaults to 10."
         ],
-        "signature": "AutoClick:bindHotkeys(mapping)",
-        "stripped_doc": "",
-        "type": "Method"
+        "doc" : "Clicks per second. May not work properly if set too high (above ~50). Defaults to 10.",
+        "notes" : [
+
+        ],
+        "signature" : "AutoClick.clicksPerSecond",
+        "type" : "Variable",
+        "returns" : [
+
+        ],
+        "desc" : "Clicks per second. May not work properly if set too high (above ~50). Defaults to 10.",
+        "parameters" : [
+
+        ]
+      }
+    ],
+    "stripped_doc" : [
+
+    ],
+    "Deprecated" : [
+
+    ],
+    "desc" : "Autoclicker",
+    "type" : "Module",
+    "Constructor" : [
+
+    ],
+    "Field" : [
+
+    ],
+    "doc" : "Autoclicker\n\nDownload: [https:\/\/github.com\/Carleslc\/Spoons\/](https:\/\/github.com\/Carleslc\/Spoons\/)",
+    "Command" : [
+
+    ],
+    "items" : [
+      {
+        "def" : "AutoClick.clicksPerSecond",
+        "name" : "clicksPerSecond",
+        "stripped_doc" : [
+          "Clicks per second. May not work properly if set too high (above ~50). Defaults to 10."
+        ],
+        "doc" : "Clicks per second. May not work properly if set too high (above ~50). Defaults to 10.",
+        "notes" : [
+
+        ],
+        "signature" : "AutoClick.clicksPerSecond",
+        "type" : "Variable",
+        "returns" : [
+
+        ],
+        "desc" : "Clicks per second. May not work properly if set too high (above ~50). Defaults to 10.",
+        "parameters" : [
+
+        ]
       },
       {
-        "def": "AutoClick:init()",
-        "desc": "Initializes AutoClick",
-        "doc": "Initializes AutoClick\n\nParameters:\n * None",
-        "name": "init",
-        "parameters": [
-          " * None"
+        "def" : "AutoClick:bindHotkeys(mapping)",
+        "name" : "bindHotkeys",
+        "stripped_doc" : [
+          "Binds hotkeys for AutoClick",
+          ""
         ],
-        "signature": "AutoClick:init()",
-        "stripped_doc": "",
-        "type": "Method"
+        "doc" : "Binds hotkeys for AutoClick\n\nParameters:\n * mapping - A table containing hotkey modifier\/key details for the following items:\n  * triggerAutoClick - Start\/Stop AutoClick",
+        "notes" : [
+
+        ],
+        "signature" : "AutoClick:bindHotkeys(mapping)",
+        "type" : "Method",
+        "returns" : [
+
+        ],
+        "desc" : "Binds hotkeys for AutoClick",
+        "parameters" : [
+          " * mapping - A table containing hotkey modifier\/key details for the following items:",
+          "  * triggerAutoClick - Start\/Stop AutoClick"
+        ]
       },
       {
-        "def": "AutoClick:isRunning()",
-        "desc": "Checks if this spoon is enabled and running",
-        "doc": "Checks if this spoon is enabled and running\n\nParameters:\n * None\n\nReturns:\n * A boolean, true if this spoon is running, otherwise false",
-        "name": "isRunning",
-        "parameters": [
-          " * None"
+        "def" : "AutoClick:init()",
+        "name" : "init",
+        "stripped_doc" : [
+          "Initializes AutoClick",
+          ""
         ],
-        "returns": [
+        "doc" : "Initializes AutoClick\n\nParameters:\n * None",
+        "notes" : [
+
+        ],
+        "signature" : "AutoClick:init()",
+        "type" : "Method",
+        "returns" : [
+
+        ],
+        "desc" : "Initializes AutoClick",
+        "parameters" : [
+          " * None"
+        ]
+      },
+      {
+        "def" : "AutoClick:isRunning()",
+        "name" : "isRunning",
+        "stripped_doc" : [
+          "Checks if this spoon is enabled and running",
+          ""
+        ],
+        "doc" : "Checks if this spoon is enabled and running\n\nParameters:\n * None\n\nReturns:\n * A boolean, true if this spoon is running, otherwise false",
+        "notes" : [
+
+        ],
+        "signature" : "AutoClick:isRunning()",
+        "type" : "Method",
+        "returns" : [
           " * A boolean, true if this spoon is running, otherwise false"
         ],
-        "signature": "AutoClick:isRunning()",
-        "stripped_doc": "",
-        "type": "Method"
+        "desc" : "Checks if this spoon is enabled and running",
+        "parameters" : [
+          " * None",
+          ""
+        ]
       },
       {
-        "def": "AutoClick:trigger()",
-        "desc": "Start/Stop AutoClick",
-        "doc": "Start/Stop AutoClick\n\nParameters:\n * None",
-        "name": "trigger",
-        "parameters": [
-          " * None"
+        "def" : "AutoClick:trigger()",
+        "name" : "trigger",
+        "stripped_doc" : [
+          "Start\/Stop AutoClick",
+          ""
         ],
-        "signature": "AutoClick:trigger()",
-        "stripped_doc": "",
-        "type": "Method"
+        "doc" : "Start\/Stop AutoClick\n\nParameters:\n * None",
+        "notes" : [
+
+        ],
+        "signature" : "AutoClick:trigger()",
+        "type" : "Method",
+        "returns" : [
+
+        ],
+        "desc" : "Start\/Stop AutoClick",
+        "parameters" : [
+          " * None"
+        ]
       }
     ],
-    "Variable": [
+    "Method" : [
       {
-        "def": "AutoClick.clicksPerSecond",
-        "desc": "Clicks per second. May not work properly if set too high (above ~50). Defaults to 10.",
-        "doc": "Clicks per second. May not work properly if set too high (above ~50). Defaults to 10.",
-        "name": "clicksPerSecond",
-        "signature": "AutoClick.clicksPerSecond",
-        "stripped_doc": "",
-        "type": "Variable"
-      }
-    ],
-    "desc": "Autoclicker",
-    "doc": "Autoclicker\n\nDownload: [https://github.com/Carleslc/Spoons/](https://github.com/Carleslc/Spoons/)",
-    "items": [
-      {
-        "def": "AutoClick:bindHotkeys(mapping)",
-        "desc": "Binds hotkeys for AutoClick",
-        "doc": "Binds hotkeys for AutoClick\n\nParameters:\n * mapping - A table containing hotkey modifier/key details for the following items:\n  * triggerAutoClick - Start/Stop AutoClick",
-        "name": "bindHotkeys",
-        "parameters": [
-          " * mapping - A table containing hotkey modifier/key details for the following items:",
-          "  * triggerAutoClick - Start/Stop AutoClick"
+        "def" : "AutoClick:bindHotkeys(mapping)",
+        "name" : "bindHotkeys",
+        "stripped_doc" : [
+          "Binds hotkeys for AutoClick",
+          ""
         ],
-        "signature": "AutoClick:bindHotkeys(mapping)",
-        "stripped_doc": "",
-        "type": "Method"
+        "doc" : "Binds hotkeys for AutoClick\n\nParameters:\n * mapping - A table containing hotkey modifier\/key details for the following items:\n  * triggerAutoClick - Start\/Stop AutoClick",
+        "notes" : [
+
+        ],
+        "signature" : "AutoClick:bindHotkeys(mapping)",
+        "type" : "Method",
+        "returns" : [
+
+        ],
+        "desc" : "Binds hotkeys for AutoClick",
+        "parameters" : [
+          " * mapping - A table containing hotkey modifier\/key details for the following items:",
+          "  * triggerAutoClick - Start\/Stop AutoClick"
+        ]
       },
       {
-        "def": "AutoClick.clicksPerSecond",
-        "desc": "Clicks per second. May not work properly if set too high (above ~50). Defaults to 10.",
-        "doc": "Clicks per second. May not work properly if set too high (above ~50). Defaults to 10.",
-        "name": "clicksPerSecond",
-        "signature": "AutoClick.clicksPerSecond",
-        "stripped_doc": "",
-        "type": "Variable"
-      },
-      {
-        "def": "AutoClick:init()",
-        "desc": "Initializes AutoClick",
-        "doc": "Initializes AutoClick\n\nParameters:\n * None",
-        "name": "init",
-        "parameters": [
+        "def" : "AutoClick:init()",
+        "name" : "init",
+        "stripped_doc" : [
+          "Initializes AutoClick",
+          ""
+        ],
+        "doc" : "Initializes AutoClick\n\nParameters:\n * None",
+        "notes" : [
+
+        ],
+        "signature" : "AutoClick:init()",
+        "type" : "Method",
+        "returns" : [
+
+        ],
+        "desc" : "Initializes AutoClick",
+        "parameters" : [
           " * None"
-        ],
-        "signature": "AutoClick:init()",
-        "stripped_doc": "",
-        "type": "Method"
+        ]
       },
       {
-        "def": "AutoClick:isRunning()",
-        "desc": "Checks if this spoon is enabled and running",
-        "doc": "Checks if this spoon is enabled and running\n\nParameters:\n * None\n\nReturns:\n * A boolean, true if this spoon is running, otherwise false",
-        "name": "isRunning",
-        "parameters": [
-          " * None"
+        "def" : "AutoClick:trigger()",
+        "name" : "trigger",
+        "stripped_doc" : [
+          "Start\/Stop AutoClick",
+          ""
         ],
-        "returns": [
+        "doc" : "Start\/Stop AutoClick\n\nParameters:\n * None",
+        "notes" : [
+
+        ],
+        "signature" : "AutoClick:trigger()",
+        "type" : "Method",
+        "returns" : [
+
+        ],
+        "desc" : "Start\/Stop AutoClick",
+        "parameters" : [
+          " * None"
+        ]
+      },
+      {
+        "def" : "AutoClick:isRunning()",
+        "name" : "isRunning",
+        "stripped_doc" : [
+          "Checks if this spoon is enabled and running",
+          ""
+        ],
+        "doc" : "Checks if this spoon is enabled and running\n\nParameters:\n * None\n\nReturns:\n * A boolean, true if this spoon is running, otherwise false",
+        "notes" : [
+
+        ],
+        "signature" : "AutoClick:isRunning()",
+        "type" : "Method",
+        "returns" : [
           " * A boolean, true if this spoon is running, otherwise false"
         ],
-        "signature": "AutoClick:isRunning()",
-        "stripped_doc": "",
-        "type": "Method"
-      },
-      {
-        "def": "AutoClick:trigger()",
-        "desc": "Start/Stop AutoClick",
-        "doc": "Start/Stop AutoClick\n\nParameters:\n * None",
-        "name": "trigger",
-        "parameters": [
-          " * None"
-        ],
-        "signature": "AutoClick:trigger()",
-        "stripped_doc": "",
-        "type": "Method"
+        "desc" : "Checks if this spoon is enabled and running",
+        "parameters" : [
+          " * None",
+          ""
+        ]
       }
     ],
-    "name": "AutoClick",
-    "stripped_doc": "\nDownload: [https://github.com/Carleslc/Spoons/](https://github.com/Carleslc/Spoons/)",
-    "submodules": [],
-    "type": "Module"
+    "name" : "AutoClick"
   }
 ]
