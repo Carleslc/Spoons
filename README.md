@@ -1,5 +1,3 @@
-***OSX Automation. Spoons library &amp; Hammerspoon configuration.***
-
 # Installation
 1. Install **[Hammerspoon](http://www.hammerspoon.org/)**
 2. Click on the desired module (spoon) below to see additional documentation and download.
