@@ -17,13 +17,13 @@
     "type": "Method"
   },
   {
-    "desc": "Generates a random password and copies it to the clipboard",
+    "desc": "Generates a random password and copies it to the clipboard. This method can use special characters: ABCDEFGHIJKLMNPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz123456789!\\\\#$%&()*+-./<=>?@[]^_{|}~\\nExcludes similar characters like O and 0 or ' and \" or ` and ´ or : and ; and ,",
     "module": "PasswordGenerator",
     "name": "strongPassword",
     "type": "Method"
   },
   {
-    "desc": "Generates a random password and copies it to the clipboard",
+    "desc": "Generates a random password and copies it to the clipboard. This method uses only alphanumeric characters: ABCDEFGHIJKLMNPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz123456789\\nExcludes similar characters like O and 0 or ' and \" or ` and ´ or : and ; and ,",
     "module": "PasswordGenerator",
     "name": "weakPassword",
     "type": "Method"

@@ -30,9 +30,7 @@ end
 --- Generates a random password
 ---
 --- Parameters:
----  * strong - A boolean, true if password can contain special characters: !\\#$%&()*+-./<=>?@[]^_{|}~
----             or false for only alphanumeric characters: ABCDEFGHIJKLMNPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz123456789
----             Excludes similar characters like O and 0 or ' and " or ` and ´ or : and ; and ,
+---  * strong - A boolean, true if password can contain special characters: !\\#$%&()*+-./<=>?@[]^_{|}~ or false for only alphanumeric characters: ABCDEFGHIJKLMNPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz123456789\nExcludes similar characters like O and 0 or ' and " or ` and ´ or : and ; and ,
 ---  * length - Password length. Defaults to 8.
 ---  * chars - Optional charset. If filled then `strong` parameter is ignored and only this charset is used.
 ---
@@ -72,9 +70,7 @@ end
 --- Generates a random password and copies it to the clipboard
 ---
 --- Parameters:
----  * strong - A boolean, true if password can contain special characters: !\\#$%&()*+-./<=>?@[]^_{|}~
----             or false for only alphanumeric characters: ABCDEFGHIJKLMNPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz123456789
----             Excludes similar characters like O and 0 or ' and " or ` and ´ or : and ; and ,
+---  * strong - A boolean, true if password can contain special characters: !\\#$%&()*+-./<=>?@[]^_{|}~ or false for only alphanumeric characters: ABCDEFGHIJKLMNPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz123456789\nExcludes similar characters like O and 0 or ' and " or ` and ´ or : and ; and ,
 ---  * length - Password length. Defaults to 8.
 ---  * chars - Optional charset. If filled then `strong` parameter is ignored and only this charset is used.
 ---
@@ -91,9 +87,7 @@ end
 
 --- PasswordGenerator:weakPassword([length, chars])
 --- Method
---- Generates a random password and copies it to the clipboard
---- This method uses only alphanumeric characters: ABCDEFGHIJKLMNPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz123456789
---- Excludes similar characters like O and 0 or ' and " or ` and ´ or : and ; and ,
+--- Generates a random password and copies it to the clipboard. This method uses only alphanumeric characters: ABCDEFGHIJKLMNPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz123456789\nExcludes similar characters like O and 0 or ' and " or ` and ´ or : and ; and ,
 ---
 --- Parameters:
 ---  * length - Password length. Defaults to 8.
@@ -105,9 +99,7 @@ obj.weakPassword = hs.fnutils.partial(obj.copyPassword, obj, false)
 
 --- PasswordGenerator:strongPassword([length, chars])
 --- Method
---- Generates a random password and copies it to the clipboard
---- This method can use special characters: ABCDEFGHIJKLMNPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz123456789!\\#$%&()*+-./<=>?@[]^_{|}~
---- Excludes similar characters like O and 0 or ' and " or ` and ´ or : and ; and ,
+--- Generates a random password and copies it to the clipboard. This method can use special characters: ABCDEFGHIJKLMNPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz123456789!\\#$%&()*+-./<=>?@[]^_{|}~\nExcludes similar characters like O and 0 or ' and " or ` and ´ or : and ; and ,
 ---
 --- Parameters:
 ---  * length - Password length. Defaults to 8.
