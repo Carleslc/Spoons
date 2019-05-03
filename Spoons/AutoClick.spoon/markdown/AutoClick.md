@@ -3,7 +3,7 @@
 
 Autoclicker
 
-Download: [https://github.com/Carleslc/Spoons/](https://github.com/Carleslc/Spoons/)
+Download: [https://github.com/Carleslc/Spoons/raw/master/Spoons/AutoClick.spoon.zip](https://github.com/Carleslc/Spoons/raw/master/Spoons/AutoClick.spoon.zip)
 
 ## API Overview
 * Variables - Configurable values

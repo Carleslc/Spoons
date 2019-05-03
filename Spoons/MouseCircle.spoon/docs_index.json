@@ -1,0 +1,25 @@
+[
+  {
+    "desc": "Draws a circle around the mouse pointer when a hotkey is pressed",
+    "name": "MouseCircle",
+    "type": "Module"
+  },
+  {
+    "desc": "An `hs.drawing.color` table defining the colour of the circle. Defaults to red.",
+    "module": "MouseCircle",
+    "name": "color",
+    "type": "Variable"
+  },
+  {
+    "desc": "Binds hotkeys for MouseCircle",
+    "module": "MouseCircle",
+    "name": "bindHotkeys",
+    "type": "Method"
+  },
+  {
+    "desc": "Draws a circle around the mouse",
+    "module": "MouseCircle",
+    "name": "show",
+    "type": "Method"
+  }
+]

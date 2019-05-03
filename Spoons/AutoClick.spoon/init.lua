@@ -2,7 +2,7 @@
 ---
 --- Autoclicker
 ---
---- Download: [https://github.com/Carleslc/Spoons/](https://github.com/Carleslc/Spoons/)
+--- Download: [https://github.com/Carleslc/Spoons/raw/master/Spoons/AutoClick.spoon.zip](https://github.com/Carleslc/Spoons/raw/master/Spoons/AutoClick.spoon.zip)
 
 local obj = {}
 obj.__index = obj

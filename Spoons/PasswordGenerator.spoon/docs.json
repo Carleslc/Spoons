@@ -80,7 +80,7 @@
     ],
     "Variable": [],
     "desc": "Generate simple or strong passwords and copy them to clipboard",
-    "doc": "Generate simple or strong passwords and copy them to clipboard\n\nDownload: [https://github.com/Carleslc/Spoons/](https://github.com/Carleslc/Spoons/)",
+    "doc": "Generate simple or strong passwords and copy them to clipboard\n\nDownload: [https://github.com/Carleslc/Spoons/raw/master/Spoons/PasswordGenerator.spoon.zip](https://github.com/Carleslc/Spoons/raw/master/Spoons/PasswordGenerator.spoon.zip)",
     "items": [
       {
         "def": "PasswordGenerator:copyPassword(strong[ , length, chars])",
@@ -154,7 +154,7 @@
       }
     ],
     "name": "PasswordGenerator",
-    "stripped_doc": "\nDownload: [https://github.com/Carleslc/Spoons/](https://github.com/Carleslc/Spoons/)",
+    "stripped_doc": "\nDownload: [https://github.com/Carleslc/Spoons/raw/master/Spoons/PasswordGenerator.spoon.zip](https://github.com/Carleslc/Spoons/raw/master/Spoons/PasswordGenerator.spoon.zip)",
     "submodules": [],
     "type": "Module"
   }

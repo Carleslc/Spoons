@@ -3,7 +3,7 @@
 
 Generate simple or strong passwords and copy them to clipboard
 
-Download: [https://github.com/Carleslc/Spoons/](https://github.com/Carleslc/Spoons/)
+Download: [https://github.com/Carleslc/Spoons/raw/master/Spoons/PasswordGenerator.spoon.zip](https://github.com/Carleslc/Spoons/raw/master/Spoons/PasswordGenerator.spoon.zip)
 
 ## API Overview
 * Methods - API calls which can only be made on an object returned by a constructor
