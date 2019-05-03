@@ -1,6 +1,6 @@
 [
   {
-    "desc": "Autoclicker",
+    "desc": "Autoclicker tool, configurable by clicks per seconds",
     "name": "AutoClick",
     "type": "Module"
   },
