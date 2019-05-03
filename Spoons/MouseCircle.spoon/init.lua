@@ -77,7 +77,7 @@ function obj:show()
     circle:show(0.5)
     self.circle = circle
 
-    self.timer = hs.timer.doAfter(3, function()
+    self.timer = hs.timer.doAfter(2, function()
         self.circle:hide(0.5)
         hs.timer.doAfter(0.6, function() self.circle:delete() self.circle = nil end)
     end)

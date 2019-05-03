@@ -22,6 +22,8 @@ end
 
 loadSpoon("ReloadConfiguration")
 
+loadSpoon("MouseCircle")
+
 loadSpoon("PasswordGenerator")
 
 loadSpoon("AutoClick")
@@ -47,11 +49,17 @@ bindKey(ctrlAltCmd, "S", snapshotWindow)
 bindKey({"alt", "cmd"}, "P", function() spoon.PasswordGenerator.weakPassword(8) end)
 bindKey(ctrlAltCmd, "P", function() spoon.PasswordGenerator.strongPassword(16) end)
 
+--- Start/Stop LineageAutoQuest bot
+--spoon.LineageAutoQuest:bindHotkeys({ triggerBot = {ctrlAltCmd, "L"} })
+
 --- Reload configuration
 spoon.ReloadConfiguration:bindHotkeys({ reloadConfiguration = {ctrlAltCmd, "R"} })
 
 --- Start/Stop Autoclick
 spoon.AutoClick:bindHotkeys({ triggerAutoClick = {ctrlAltCmd, "C"} })
+
+--- Locates pointer
+spoon.MouseCircle:bindHotkeys({ show = {ctrlAltCmd, "M"} })
 
 -- Finish loading
 

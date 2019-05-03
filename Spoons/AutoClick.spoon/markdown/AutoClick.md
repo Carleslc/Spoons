@@ -1,7 +1,7 @@
 # [docs](index.md) » AutoClick
 ---
 
-Autoclicker tool, configurable by clicks per seconds
+Autoclicker tool, configurable with clicks per seconds
 
 Download: [https://github.com/Carleslc/Spoons/raw/master/Spoons/AutoClick.spoon.zip](https://github.com/Carleslc/Spoons/raw/master/Spoons/AutoClick.spoon.zip)
 

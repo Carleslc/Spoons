@@ -1,5 +1,8 @@
 --- === LineageAutoQuest ===
+---
 --- Lineage II Revolution Auto-Quest Bot (Nox App Player)
+---
+--- Download: [https://github.com/Carleslc/Spoons/raw/master/Spoons/LineageAutoQuest.spoon.zip](https://github.com/Carleslc/Spoons/raw/master/Spoons/LineageAutoQuest.spoon.zip)
 
 local bot = {}
 bot.__index = bot
@@ -36,11 +39,24 @@ function bot:init()
     self.lastPx = { r = 0, g = 0, b = 0 }
 end
 
-function bot:bindHotkeys(mapping)
-   local def = { reloadConfiguration = self.start }
+--- LineageAutoQuest:bindHotkeys(mapping)
+--- Method
+--- Binds hotkeys for LineageAutoQuest
+---
+--- Parameters:
+---  * mapping - A table containing hotkey modifier/key details for the following items:
+---   * triggerBot - Start/Stop LineageAutoQuest bot
+function obj:bindHotkeys(mapping)
+   local def = { triggerBot = hs.fnutils.partial(self.start, self) }
    hs.spoons.bindHotkeysToSpec(def, mapping)
 end
 
+--- LineageAutoQuest:start()
+--- Method
+--- Start/Stop Auto-Quest Bot
+---
+--- Parameters:
+---  * None
 function bot:start()
     if nox == nil then
         self.notify("Starting Nox App Player")

@@ -71,8 +71,8 @@
         "type": "Variable"
       }
     ],
-    "desc": "Autoclicker tool, configurable by clicks per seconds",
-    "doc": "Autoclicker tool, configurable by clicks per seconds\n\nDownload: [https://github.com/Carleslc/Spoons/raw/master/Spoons/AutoClick.spoon.zip](https://github.com/Carleslc/Spoons/raw/master/Spoons/AutoClick.spoon.zip)",
+    "desc": "Autoclicker tool, configurable with clicks per seconds",
+    "doc": "Autoclicker tool, configurable with clicks per seconds\n\nDownload: [https://github.com/Carleslc/Spoons/raw/master/Spoons/AutoClick.spoon.zip](https://github.com/Carleslc/Spoons/raw/master/Spoons/AutoClick.spoon.zip)",
     "items": [
       {
         "def": "AutoClick:bindHotkeys(mapping)",

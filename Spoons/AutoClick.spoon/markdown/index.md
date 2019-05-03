@@ -16,4 +16,4 @@
 ## API Documentation
 | Module                                                             | Description           |
 | ------------------------------------------------------------------ | --------------------- |
-| [AutoClick](AutoClick.md)                          | Autoclicker tool, configurable by clicks per seconds     |
+| [AutoClick](AutoClick.md)                          | Autoclicker tool, configurable with clicks per seconds     |

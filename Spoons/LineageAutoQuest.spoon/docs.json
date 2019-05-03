@@ -1,41 +1,71 @@
 [
   {
-    "Constant" : [
-
+    "Command": [],
+    "Constant": [],
+    "Constructor": [],
+    "Deprecated": [],
+    "Field": [],
+    "Function": [],
+    "Method": [
+      {
+        "def": "LineageAutoQuest:bindHotkeys(mapping)",
+        "desc": "Binds hotkeys for LineageAutoQuest",
+        "doc": "Binds hotkeys for LineageAutoQuest\n\nParameters:\n * mapping - A table containing hotkey modifier/key details for the following items:\n  * triggerBot - Start/Stop LineageAutoQuest bot",
+        "name": "bindHotkeys",
+        "parameters": [
+          " * mapping - A table containing hotkey modifier/key details for the following items:",
+          "  * triggerBot - Start/Stop LineageAutoQuest bot"
+        ],
+        "signature": "LineageAutoQuest:bindHotkeys(mapping)",
+        "stripped_doc": "",
+        "type": "Method"
+      },
+      {
+        "def": "LineageAutoQuest:start()",
+        "desc": "Start/Stop Auto-Quest Bot",
+        "doc": "Start/Stop Auto-Quest Bot\n\nParameters:\n * None",
+        "name": "start",
+        "parameters": [
+          " * None"
+        ],
+        "signature": "LineageAutoQuest:start()",
+        "stripped_doc": "",
+        "type": "Method"
+      }
     ],
-    "submodules" : [
-
+    "Variable": [],
+    "desc": "Lineage II Revolution Auto-Quest Bot (Nox App Player)",
+    "doc": "Lineage II Revolution Auto-Quest Bot (Nox App Player)\n\nDownload: [https://github.com/Carleslc/Spoons/raw/master/Spoons/LineageAutoQuest.spoon.zip](https://github.com/Carleslc/Spoons/raw/master/Spoons/LineageAutoQuest.spoon.zip)",
+    "items": [
+      {
+        "def": "LineageAutoQuest:bindHotkeys(mapping)",
+        "desc": "Binds hotkeys for LineageAutoQuest",
+        "doc": "Binds hotkeys for LineageAutoQuest\n\nParameters:\n * mapping - A table containing hotkey modifier/key details for the following items:\n  * triggerBot - Start/Stop LineageAutoQuest bot",
+        "name": "bindHotkeys",
+        "parameters": [
+          " * mapping - A table containing hotkey modifier/key details for the following items:",
+          "  * triggerBot - Start/Stop LineageAutoQuest bot"
+        ],
+        "signature": "LineageAutoQuest:bindHotkeys(mapping)",
+        "stripped_doc": "",
+        "type": "Method"
+      },
+      {
+        "def": "LineageAutoQuest:start()",
+        "desc": "Start/Stop Auto-Quest Bot",
+        "doc": "Start/Stop Auto-Quest Bot\n\nParameters:\n * None",
+        "name": "start",
+        "parameters": [
+          " * None"
+        ],
+        "signature": "LineageAutoQuest:start()",
+        "stripped_doc": "",
+        "type": "Method"
+      }
     ],
-    "Function" : [
-
-    ],
-    "Variable" : [
-
-    ],
-    "stripped_doc" : [
-
-    ],
-    "desc" : "UNKNOWN DESC",
-    "Deprecated" : [
-
-    ],
-    "type" : "Module",
-    "Constructor" : [
-
-    ],
-    "items" : [
-
-    ],
-    "Method" : [
-
-    ],
-    "Command" : [
-
-    ],
-    "Field" : [
-
-    ],
-    "doc" : "Lineage II Revolution Auto-Quest Bot (Nox App Player)",
-    "name" : "LineageAutoQuest"
+    "name": "LineageAutoQuest",
+    "stripped_doc": "\nDownload: [https://github.com/Carleslc/Spoons/raw/master/Spoons/LineageAutoQuest.spoon.zip](https://github.com/Carleslc/Spoons/raw/master/Spoons/LineageAutoQuest.spoon.zip)",
+    "submodules": [],
+    "type": "Module"
   }
 ]

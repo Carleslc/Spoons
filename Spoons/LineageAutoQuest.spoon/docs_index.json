@@ -1,0 +1,19 @@
+[
+  {
+    "desc": "Lineage II Revolution Auto-Quest Bot (Nox App Player)",
+    "name": "LineageAutoQuest",
+    "type": "Module"
+  },
+  {
+    "desc": "Binds hotkeys for LineageAutoQuest",
+    "module": "LineageAutoQuest",
+    "name": "bindHotkeys",
+    "type": "Method"
+  },
+  {
+    "desc": "Start/Stop Auto-Quest Bot",
+    "module": "LineageAutoQuest",
+    "name": "start",
+    "type": "Method"
+  }
+]
