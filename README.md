@@ -14,6 +14,10 @@
 
 *Adds a hotkey to reload the hammerspoon configuration, and a pathwatcher to automatically reload on changes.*
 
+## > [TextClipboardHistory](https://github.com/Carleslc/Spoons/blob/master/Spoons/TextClipboardHistory.spoon/markdown/TextClipboardHistory.md)
+
+*Keep a history of the clipboard, only for text entries.*
+
 ## > [LineageAutoQuest](https://github.com/Carleslc/Spoons/blob/master/Spoons/LineageAutoQuest.spoon/markdown/LineageAutoQuest.md)
 
 *Lineage II Revolution Auto-Quest Bot (Nox App Player)*
