@@ -1,0 +1,161 @@
+[
+  {
+    "Command": [],
+    "Constant": [],
+    "Constructor": [],
+    "Deprecated": [],
+    "Field": [],
+    "Function": [],
+    "Method": [
+      {
+        "def": "PasswordGenerator:copyPassword(strong[ , length, chars])",
+        "desc": "Generates a random password and copies it to the clipboard",
+        "doc": "Generates a random password and copies it to the clipboard\n\nParameters:\n * strong - A boolean, true if password can contain special characters: !\\\\#$%&()*+-./<=>?@[]^_{|}~\n            or false for only alphanumeric characters: ABCDEFGHIJKLMNPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz123456789\n            Excludes similar characters like O and 0 or ' and \" or ` and ´ or : and ; and ,\n * length - Password length. Defaults to 8.\n * chars - Optional charset. If filled then `strong` parameter is ignored and only this charset is used.\n\nReturns:\n * Generated password",
+        "name": "copyPassword",
+        "parameters": [
+          " * strong - A boolean, true if password can contain special characters: !\\\\#$%&()*+-./<=>?@[]^_{|}~",
+          "            or false for only alphanumeric characters: ABCDEFGHIJKLMNPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz123456789",
+          "            Excludes similar characters like O and 0 or ' and \" or ` and ´ or : and ; and ,",
+          " * length - Password length. Defaults to 8.",
+          " * chars - Optional charset. If filled then `strong` parameter is ignored and only this charset is used."
+        ],
+        "returns": [
+          " * Generated password"
+        ],
+        "signature": "PasswordGenerator:copyPassword(strong[ , length, chars])",
+        "stripped_doc": "",
+        "type": "Method"
+      },
+      {
+        "def": "PasswordGenerator:generatePassword(strong[ , length, chars])",
+        "desc": "Generates a random password",
+        "doc": "Generates a random password\n\nParameters:\n * strong - A boolean, true if password can contain special characters: !\\\\#$%&()*+-./<=>?@[]^_{|}~\n            or false for only alphanumeric characters: ABCDEFGHIJKLMNPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz123456789\n            Excludes similar characters like O and 0 or ' and \" or ` and ´ or : and ; and ,\n * length - Password length. Defaults to 8.\n * chars - Optional charset. If filled then `strong` parameter is ignored and only this charset is used.\n\nReturns:\n * Generated password",
+        "name": "generatePassword",
+        "parameters": [
+          " * strong - A boolean, true if password can contain special characters: !\\\\#$%&()*+-./<=>?@[]^_{|}~",
+          "            or false for only alphanumeric characters: ABCDEFGHIJKLMNPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz123456789",
+          "            Excludes similar characters like O and 0 or ' and \" or ` and ´ or : and ; and ,",
+          " * length - Password length. Defaults to 8.",
+          " * chars - Optional charset. If filled then `strong` parameter is ignored and only this charset is used."
+        ],
+        "returns": [
+          " * Generated password"
+        ],
+        "signature": "PasswordGenerator:generatePassword(strong[ , length, chars])",
+        "stripped_doc": "",
+        "type": "Method"
+      },
+      {
+        "def": "PasswordGenerator:strongPassword([length, chars])",
+        "desc": "Generates a random password and copies it to the clipboard",
+        "doc": "Generates a random password and copies it to the clipboard\nThis method can use special characters: ABCDEFGHIJKLMNPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz123456789!\\\\#$%&()*+-./<=>?@[]^_{|}~\nExcludes similar characters like O and 0 or ' and \" or ` and ´ or : and ; and ,\n\nParameters:\n * length - Password length. Defaults to 8.\n * chars - Optional charset. If filled then only this charset is used.\n\nReturns:\n * Generated password",
+        "name": "strongPassword",
+        "parameters": [
+          " * length - Password length. Defaults to 8.",
+          " * chars - Optional charset. If filled then only this charset is used."
+        ],
+        "returns": [
+          " * Generated password"
+        ],
+        "signature": "PasswordGenerator:strongPassword([length, chars])",
+        "stripped_doc": "This method can use special characters: ABCDEFGHIJKLMNPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz123456789!\\\\#$%&()*+-./<=>?@[]^_{|}~\nExcludes similar characters like O and 0 or ' and \" or ` and ´ or : and ; and ,",
+        "type": "Method"
+      },
+      {
+        "def": "PasswordGenerator:weakPassword([length, chars])",
+        "desc": "Generates a random password and copies it to the clipboard",
+        "doc": "Generates a random password and copies it to the clipboard\nThis method uses only alphanumeric characters: ABCDEFGHIJKLMNPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz123456789\nExcludes similar characters like O and 0 or ' and \" or ` and ´ or : and ; and ,\n\nParameters:\n * length - Password length. Defaults to 8.\n * chars - Optional charset. If filled then only this charset is used.\n\nReturns:\n * Generated password",
+        "name": "weakPassword",
+        "parameters": [
+          " * length - Password length. Defaults to 8.",
+          " * chars - Optional charset. If filled then only this charset is used."
+        ],
+        "returns": [
+          " * Generated password"
+        ],
+        "signature": "PasswordGenerator:weakPassword([length, chars])",
+        "stripped_doc": "This method uses only alphanumeric characters: ABCDEFGHIJKLMNPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz123456789\nExcludes similar characters like O and 0 or ' and \" or ` and ´ or : and ; and ,",
+        "type": "Method"
+      }
+    ],
+    "Variable": [],
+    "desc": "Generate simple or strong passwords and copy them to clipboard",
+    "doc": "Generate simple or strong passwords and copy them to clipboard\n\nDownload: [https://github.com/Carleslc/Spoons/](https://github.com/Carleslc/Spoons/)",
+    "items": [
+      {
+        "def": "PasswordGenerator:copyPassword(strong[ , length, chars])",
+        "desc": "Generates a random password and copies it to the clipboard",
+        "doc": "Generates a random password and copies it to the clipboard\n\nParameters:\n * strong - A boolean, true if password can contain special characters: !\\\\#$%&()*+-./<=>?@[]^_{|}~\n            or false for only alphanumeric characters: ABCDEFGHIJKLMNPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz123456789\n            Excludes similar characters like O and 0 or ' and \" or ` and ´ or : and ; and ,\n * length - Password length. Defaults to 8.\n * chars - Optional charset. If filled then `strong` parameter is ignored and only this charset is used.\n\nReturns:\n * Generated password",
+        "name": "copyPassword",
+        "parameters": [
+          " * strong - A boolean, true if password can contain special characters: !\\\\#$%&()*+-./<=>?@[]^_{|}~",
+          "            or false for only alphanumeric characters: ABCDEFGHIJKLMNPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz123456789",
+          "            Excludes similar characters like O and 0 or ' and \" or ` and ´ or : and ; and ,",
+          " * length - Password length. Defaults to 8.",
+          " * chars - Optional charset. If filled then `strong` parameter is ignored and only this charset is used."
+        ],
+        "returns": [
+          " * Generated password"
+        ],
+        "signature": "PasswordGenerator:copyPassword(strong[ , length, chars])",
+        "stripped_doc": "",
+        "type": "Method"
+      },
+      {
+        "def": "PasswordGenerator:generatePassword(strong[ , length, chars])",
+        "desc": "Generates a random password",
+        "doc": "Generates a random password\n\nParameters:\n * strong - A boolean, true if password can contain special characters: !\\\\#$%&()*+-./<=>?@[]^_{|}~\n            or false for only alphanumeric characters: ABCDEFGHIJKLMNPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz123456789\n            Excludes similar characters like O and 0 or ' and \" or ` and ´ or : and ; and ,\n * length - Password length. Defaults to 8.\n * chars - Optional charset. If filled then `strong` parameter is ignored and only this charset is used.\n\nReturns:\n * Generated password",
+        "name": "generatePassword",
+        "parameters": [
+          " * strong - A boolean, true if password can contain special characters: !\\\\#$%&()*+-./<=>?@[]^_{|}~",
+          "            or false for only alphanumeric characters: ABCDEFGHIJKLMNPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz123456789",
+          "            Excludes similar characters like O and 0 or ' and \" or ` and ´ or : and ; and ,",
+          " * length - Password length. Defaults to 8.",
+          " * chars - Optional charset. If filled then `strong` parameter is ignored and only this charset is used."
+        ],
+        "returns": [
+          " * Generated password"
+        ],
+        "signature": "PasswordGenerator:generatePassword(strong[ , length, chars])",
+        "stripped_doc": "",
+        "type": "Method"
+      },
+      {
+        "def": "PasswordGenerator:strongPassword([length, chars])",
+        "desc": "Generates a random password and copies it to the clipboard",
+        "doc": "Generates a random password and copies it to the clipboard\nThis method can use special characters: ABCDEFGHIJKLMNPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz123456789!\\\\#$%&()*+-./<=>?@[]^_{|}~\nExcludes similar characters like O and 0 or ' and \" or ` and ´ or : and ; and ,\n\nParameters:\n * length - Password length. Defaults to 8.\n * chars - Optional charset. If filled then only this charset is used.\n\nReturns:\n * Generated password",
+        "name": "strongPassword",
+        "parameters": [
+          " * length - Password length. Defaults to 8.",
+          " * chars - Optional charset. If filled then only this charset is used."
+        ],
+        "returns": [
+          " * Generated password"
+        ],
+        "signature": "PasswordGenerator:strongPassword([length, chars])",
+        "stripped_doc": "This method can use special characters: ABCDEFGHIJKLMNPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz123456789!\\\\#$%&()*+-./<=>?@[]^_{|}~\nExcludes similar characters like O and 0 or ' and \" or ` and ´ or : and ; and ,",
+        "type": "Method"
+      },
+      {
+        "def": "PasswordGenerator:weakPassword([length, chars])",
+        "desc": "Generates a random password and copies it to the clipboard",
+        "doc": "Generates a random password and copies it to the clipboard\nThis method uses only alphanumeric characters: ABCDEFGHIJKLMNPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz123456789\nExcludes similar characters like O and 0 or ' and \" or ` and ´ or : and ; and ,\n\nParameters:\n * length - Password length. Defaults to 8.\n * chars - Optional charset. If filled then only this charset is used.\n\nReturns:\n * Generated password",
+        "name": "weakPassword",
+        "parameters": [
+          " * length - Password length. Defaults to 8.",
+          " * chars - Optional charset. If filled then only this charset is used."
+        ],
+        "returns": [
+          " * Generated password"
+        ],
+        "signature": "PasswordGenerator:weakPassword([length, chars])",
+        "stripped_doc": "This method uses only alphanumeric characters: ABCDEFGHIJKLMNPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz123456789\nExcludes similar characters like O and 0 or ' and \" or ` and ´ or : and ; and ,",
+        "type": "Method"
+      }
+    ],
+    "name": "PasswordGenerator",
+    "stripped_doc": "\nDownload: [https://github.com/Carleslc/Spoons/](https://github.com/Carleslc/Spoons/)",
+    "submodules": [],
+    "type": "Module"
+  }
+]

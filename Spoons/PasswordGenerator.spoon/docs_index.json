@@ -1,0 +1,31 @@
+[
+  {
+    "desc": "Generate simple or strong passwords and copy them to clipboard",
+    "name": "PasswordGenerator",
+    "type": "Module"
+  },
+  {
+    "desc": "Generates a random password and copies it to the clipboard",
+    "module": "PasswordGenerator",
+    "name": "copyPassword",
+    "type": "Method"
+  },
+  {
+    "desc": "Generates a random password",
+    "module": "PasswordGenerator",
+    "name": "generatePassword",
+    "type": "Method"
+  },
+  {
+    "desc": "Generates a random password and copies it to the clipboard",
+    "module": "PasswordGenerator",
+    "name": "strongPassword",
+    "type": "Method"
+  },
+  {
+    "desc": "Generates a random password and copies it to the clipboard",
+    "module": "PasswordGenerator",
+    "name": "weakPassword",
+    "type": "Method"
+  }
+]
