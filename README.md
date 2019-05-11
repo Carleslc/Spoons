@@ -27,6 +27,10 @@
 
 *Draws a circle around the mouse pointer when a hotkey is pressed.*
 
+## > [Resources](https://github.com/Carleslc/Spoons/blob/master/Spoons/Resources.spoon/markdown/Resources.md)
+
+*Add a resource to https://carleslc.me/resources with the copied URL.*
+
 # Configuration
 
 See [**init.lua**](https://github.com/Carleslc/Spoons/blob/master/init.lua) for examples of Spoons **configuration** and **keybindings**.
@@ -39,4 +43,3 @@ _[hammerspoon repository](https://github.com/Hammerspoon/hammerspoon)_
 cd SPOON_FOLDER
 python $GITHUB/hammerspoon/scripts/docs/bin/build_docs.py --validate --templates $GITHUB/hammerspoon/scripts/docs/templates/ --output_dir . --json --markdown --debug --standalone .
 ```
-
