@@ -17,8 +17,8 @@ function help()
     return [[
         Ctrl+D    -  Downloads
         Ctrl+V    -  Paste
+        Ctrl+T    -  Open Terminal
         Alt+S     -  Custom Screenshot
-        Alt+Cmd+T -  Open Terminal
         Ctrl+Alt+Cmd+T     -  Open Terminal in current Finder folder
         Ctrl+Alt+Cmd+S     -  Snapshot current window
         Ctrl+Alt+Cmd+space -  Clipboard History
@@ -62,12 +62,14 @@ bindKey("ctrl", "D", function() open(HOME .. "/Downloads") end)
 --- Pastes clipboard
 bindKey("ctrl", "V", function() hs.eventtap.keyStrokes(hs.pasteboard.getContents()) end)
 
+--- Open terminal
+bindKey("ctrl", "T", function() hs.application.launchOrFocus("Terminal.app") end)
+
 --- Takes a snapshot of the current window
 bindKey(ctrlAltCmd, "S", snapshotWindow)
 
 --- Open terminal in current finder location
 bindKey(ctrlAltCmd, "T", openTerminalHere)
-bindKey({"alt", "cmd"}, "T", function() hs.application.launchOrFocus("Terminal.app") end)
 
 --- Generate a weak or strong password and copy to the clipboard
 bindKey({"alt", "cmd"}, "P", function() spoon.PasswordGenerator.weakPassword(8) end)
