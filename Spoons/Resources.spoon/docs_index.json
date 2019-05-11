@@ -1,0 +1,37 @@
+[
+  {
+    "desc": "Add a resource to https://carleslc.me/resources with the copied url",
+    "name": "Resources",
+    "type": "Module"
+  },
+  {
+    "desc": "Required. Path to get_info.py script.",
+    "module": "Resources",
+    "name": "path",
+    "type": "Variable"
+  },
+  {
+    "desc": "Python command. Defaults to python3",
+    "module": "Resources",
+    "name": "python",
+    "type": "Variable"
+  },
+  {
+    "desc": "Open the add resources form with prefilled information about an URL",
+    "module": "Resources",
+    "name": "add",
+    "type": "Method"
+  },
+  {
+    "desc": "Open the add resources form with prefilled information about the copied URL",
+    "module": "Resources",
+    "name": "addWithCopiedUrl",
+    "type": "Method"
+  },
+  {
+    "desc": "Binds hotkeys for Resources",
+    "module": "Resources",
+    "name": "bindHotkeys",
+    "type": "Method"
+  }
+]

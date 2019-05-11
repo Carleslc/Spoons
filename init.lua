@@ -11,12 +11,23 @@ os.execute("mkdir -p " .. HOME .. "/.hammerspoon/cache/")
 require('utils.hs')
 require('utils.images')
 require('utils.spoons')
+require('utils.strings')
 
-function snapshotWindow(title)
-    notify("Snapshot to " .. snapshot(nil, hs.window.focusedWindow(), title, HOME .. "/Pictures/"))
+function help()
+    return [[
+        Ctrl+D    -  Downloads
+        Ctrl+V    -  Paste
+        Alt+S     -  Custom Screenshot
+        Alt+Cmd+T -  Open Terminal
+        Ctrl+Alt+Cmd+T     -  Open Terminal in current Finder folder
+        Ctrl+Alt+Cmd+S     -  Snapshot current window
+        Ctrl+Alt+Cmd+space -  Clipboard History
+        Ctrl+Alt+Cmd+C     -  AutoClick
+        Ctrl+Alt+Cmd+M     -  Locate pointer
+        [Ctrl+]Alt+Cmd+P   -  Generate Strong/Weak Password
+        Ctrl+Alt+Cmd+W     -  Add a resource with the copied url
+        Ctrl+Alt+Cmd+R     -  Reload Hammerspoon]]
 end
-
-hs.alert.defaultStyle.atScreenEdge = 1
 
 -- Spoons
 
@@ -27,6 +38,9 @@ loadSpoon("ReloadConfiguration")
 loadSpoon("MouseCircle")
 
 loadSpoon("PasswordGenerator")
+
+loadSpoon("Resources")
+spoon.Resources.path = HOME .. '/Git/GitHub/resources/get_info.py'
 
 loadSpoon("AutoClick")
 spoon.AutoClick.clicksPerSecond = 20
@@ -40,7 +54,7 @@ clipboardHistory:start()
 local ctrlAltCmd = {"ctrl", "alt", "cmd"}
 
 --- Shows Help
-bindKey(ctrlAltCmd, "H", function() hs.alert("Ctrl+D\t\t-  Downloads\nCtrl+V\t\t-  Paste\nAlt+S\t\t-  Custom Screenshot\nCtrl+Alt+Cmd+S\t\t-  Snapshot current window\nCtrl+Alt+Cmd+T\t\t-  Open Terminal\nCtrl+Alt+Cmd+space\t\t-  Clipboard History\nCtrl+Alt+Cmd+C\t\t-  AutoClick\nCtrl+Alt+Cmd+M\t\t-  Locate pointer\n[Ctrl+]Alt+Cmd+P\t\t-  Generate Strong/Weak Password\nCtrl+Alt+Cmd+R\t\t-  Reload Hammerspoon", 6) end)
+bindKey(ctrlAltCmd, "H", function() alert(help(), 5) end)
 
 --- Open Downloads folder
 bindKey("ctrl", "D", function() open(HOME .. "/Downloads") end)
@@ -51,12 +65,16 @@ bindKey("ctrl", "V", function() hs.eventtap.keyStrokes(hs.pasteboard.getContents
 --- Takes a snapshot of the current window
 bindKey(ctrlAltCmd, "S", snapshotWindow)
 
---- Open terminal
-bindKey(ctrlAltCmd, "T", function() hs.application.launchOrFocus("Terminal") end)
+--- Open terminal in current finder location
+bindKey(ctrlAltCmd, "T", openTerminalHere)
+bindKey({"alt", "cmd"}, "T", function() hs.application.launchOrFocus("Terminal.app") end)
 
 --- Generate a weak or strong password and copy to the clipboard
 bindKey({"alt", "cmd"}, "P", function() spoon.PasswordGenerator.weakPassword(8) end)
 bindKey(ctrlAltCmd, "P", function() spoon.PasswordGenerator.strongPassword(16) end)
+
+--- Add a resource to https://carleslc.me/resources with the copied url
+spoon.Resources:bindHotkeys({ add = {ctrlAltCmd, "W"} })
 
 --- Start/Stop LineageAutoQuest bot
 --spoon.LineageAutoQuest:bindHotkeys({ triggerBot = {ctrlAltCmd, "L"} })

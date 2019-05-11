@@ -1,0 +1,132 @@
+[
+  {
+    "Command": [],
+    "Constant": [],
+    "Constructor": [],
+    "Deprecated": [],
+    "Field": [],
+    "Function": [],
+    "Method": [
+      {
+        "def": "Resources:add()",
+        "desc": "Open the add resources form with prefilled information about an URL",
+        "doc": "Open the add resources form with prefilled information about an URL\n\nParameters:\n * url - URL of the resource to add",
+        "name": "add",
+        "parameters": [
+          " * url - URL of the resource to add"
+        ],
+        "signature": "Resources:add()",
+        "stripped_doc": "",
+        "type": "Method"
+      },
+      {
+        "def": "Resources:addWithCopiedUrl()",
+        "desc": "Open the add resources form with prefilled information about the copied URL",
+        "doc": "Open the add resources form with prefilled information about the copied URL\n\nParameters:\n * None",
+        "name": "addWithCopiedUrl",
+        "parameters": [
+          " * None"
+        ],
+        "signature": "Resources:addWithCopiedUrl()",
+        "stripped_doc": "",
+        "type": "Method"
+      },
+      {
+        "def": "Resources:bindHotkeys(mapping)",
+        "desc": "Binds hotkeys for Resources",
+        "doc": "Binds hotkeys for Resources\n\nParameters:\n * mapping - A table containing hotkey modifier/key details for the following items:\n  * add - Open the add resources form with prefilled information about the copied URL",
+        "name": "bindHotkeys",
+        "parameters": [
+          " * mapping - A table containing hotkey modifier/key details for the following items:",
+          "  * add - Open the add resources form with prefilled information about the copied URL"
+        ],
+        "signature": "Resources:bindHotkeys(mapping)",
+        "stripped_doc": "",
+        "type": "Method"
+      }
+    ],
+    "Variable": [
+      {
+        "def": "Resources.path",
+        "desc": "Required. Path to get_info.py script.",
+        "doc": "Required. Path to get_info.py script.",
+        "name": "path",
+        "signature": "Resources.path",
+        "stripped_doc": "",
+        "type": "Variable"
+      },
+      {
+        "def": "Resources.python",
+        "desc": "Python command. Defaults to python3",
+        "doc": "Python command. Defaults to python3",
+        "name": "python",
+        "signature": "Resources.python",
+        "stripped_doc": "",
+        "type": "Variable"
+      }
+    ],
+    "desc": "Add a resource to https://carleslc.me/resources with the copied url",
+    "doc": "Add a resource to https://carleslc.me/resources with the copied url\n\nDownload: [https://github.com/Carleslc/Spoons/raw/master/Spoons/Resources.spoon.zip](https://github.com/Carleslc/Spoons/raw/master/Spoons/Resources.spoon.zip)",
+    "items": [
+      {
+        "def": "Resources:add()",
+        "desc": "Open the add resources form with prefilled information about an URL",
+        "doc": "Open the add resources form with prefilled information about an URL\n\nParameters:\n * url - URL of the resource to add",
+        "name": "add",
+        "parameters": [
+          " * url - URL of the resource to add"
+        ],
+        "signature": "Resources:add()",
+        "stripped_doc": "",
+        "type": "Method"
+      },
+      {
+        "def": "Resources:addWithCopiedUrl()",
+        "desc": "Open the add resources form with prefilled information about the copied URL",
+        "doc": "Open the add resources form with prefilled information about the copied URL\n\nParameters:\n * None",
+        "name": "addWithCopiedUrl",
+        "parameters": [
+          " * None"
+        ],
+        "signature": "Resources:addWithCopiedUrl()",
+        "stripped_doc": "",
+        "type": "Method"
+      },
+      {
+        "def": "Resources:bindHotkeys(mapping)",
+        "desc": "Binds hotkeys for Resources",
+        "doc": "Binds hotkeys for Resources\n\nParameters:\n * mapping - A table containing hotkey modifier/key details for the following items:\n  * add - Open the add resources form with prefilled information about the copied URL",
+        "name": "bindHotkeys",
+        "parameters": [
+          " * mapping - A table containing hotkey modifier/key details for the following items:",
+          "  * add - Open the add resources form with prefilled information about the copied URL"
+        ],
+        "signature": "Resources:bindHotkeys(mapping)",
+        "stripped_doc": "",
+        "type": "Method"
+      },
+      {
+        "def": "Resources.path",
+        "desc": "Required. Path to get_info.py script.",
+        "doc": "Required. Path to get_info.py script.",
+        "name": "path",
+        "signature": "Resources.path",
+        "stripped_doc": "",
+        "type": "Variable"
+      },
+      {
+        "def": "Resources.python",
+        "desc": "Python command. Defaults to python3",
+        "doc": "Python command. Defaults to python3",
+        "name": "python",
+        "signature": "Resources.python",
+        "stripped_doc": "",
+        "type": "Variable"
+      }
+    ],
+    "name": "Resources",
+    "stripped_doc": "\nDownload: [https://github.com/Carleslc/Spoons/raw/master/Spoons/Resources.spoon.zip](https://github.com/Carleslc/Spoons/raw/master/Spoons/Resources.spoon.zip)",
+    "submodules": [],
+    "type": "Module"
+  }
+]

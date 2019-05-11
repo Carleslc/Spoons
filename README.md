@@ -30,3 +30,13 @@
 # Configuration
 
 See [**init.lua**](https://github.com/Carleslc/Spoons/blob/master/init.lua) for examples of Spoons **configuration** and **keybindings**.
+
+### Build documentation for Spoons
+
+_[hammerspoon repository](https://github.com/Hammerspoon/hammerspoon)_
+
+```bash
+cd SPOON_FOLDER
+python $GITHUB/hammerspoon/scripts/docs/bin/build_docs.py --validate --templates $GITHUB/hammerspoon/scripts/docs/templates/ --output_dir . --json --markdown --debug --standalone .
+```
+

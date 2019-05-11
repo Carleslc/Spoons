@@ -1,5 +1,8 @@
 bindKey = hs.hotkey.bind
 
+alert = hs.alert
+alert.defaultStyle.atScreenEdge = 1 -- Top
+
 function notify(text, seconds, title)
 	title = title or "Hammerspoon"
 	print(title .. ": " .. text)
@@ -16,4 +19,21 @@ end
 
 function open(f)
 	hs.execute("open " .. f)
+end
+
+function openTerminalHere()
+    hs.osascript.applescript([[
+        tell application "Finder"
+            if front window exists then
+                set theFolder to POSIX path of (target of front window as string)
+                tell application "Terminal"
+                    if not (exists window 1) then reopen
+                    activate
+                    do script "cd '" & theFolder & "'" in window 1
+                end tell
+            else
+                tell application "Terminal" to activate
+            end if
+        end tell
+    ]])
 end

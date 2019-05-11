@@ -1,3 +1,4 @@
+require("utils.hs")
 require("utils.strings")
 
 function snapshot(rect, window, title, path)
@@ -11,6 +12,11 @@ function snapshot(rect, window, title, path)
     local image = screen:snapshot(rect)
     image:saveToFile(file)
     return file
+end
+
+function snapshotWindow(title)
+    notify("Snapshot to " .. snapshot(nil, hs.window.frontmostWindow(), title, os.getenv("HOME") .. "/Pictures/"))
+    hs.launchOrFocus("Finder")
 end
 
 function getPixel(imageFile, x, y)
