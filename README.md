@@ -1,5 +1,9 @@
 # Spoons
 
+_OSX Automation. Spoons library & Hammerspoon configuration. AutoClick, PasswordGenerator and more._
+
+[![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/C0C2VFGD)
+
 1. Install **[Hammerspoon](http://www.hammerspoon.org/)**
 2. Click on the desired module (spoon) below to see additional documentation and download.
 
