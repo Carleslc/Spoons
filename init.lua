@@ -15,10 +15,10 @@ require('utils.strings')
 
 function help()
     return [[
-        Ctrl+D    -  Downloads
         Ctrl+V    -  Paste
         Ctrl+T    -  Open Terminal
         Alt+S     -  Custom Screenshot
+        Ctrl+Shift+D       -  Downloads
         Ctrl+Alt+Cmd+T     -  Open Terminal in current Finder folder
         Ctrl+Alt+Cmd+S     -  Snapshot current window
         Ctrl+Alt+Cmd+space -  Clipboard History
@@ -57,7 +57,7 @@ local ctrlAltCmd = {"ctrl", "alt", "cmd"}
 bindKey(ctrlAltCmd, "H", function() alert(help(), 5) end)
 
 --- Open Downloads folder
-bindKey("ctrl", "D", function() open(HOME .. "/Downloads") end)
+bindKey({"ctrl", "shift"}, "D", function() open(HOME .. "/Downloads") end)
 
 --- Pastes clipboard
 bindKey("ctrl", "V", function() hs.eventtap.keyStrokes(hs.pasteboard.getContents()) end)
@@ -73,7 +73,17 @@ bindKey(ctrlAltCmd, "T", openTerminalHere)
 
 --- Generate a weak or strong password and copy to the clipboard
 bindKey({"alt", "cmd"}, "P", function() spoon.PasswordGenerator.weakPassword(8) end)
-bindKey(ctrlAltCmd, "P", function() spoon.PasswordGenerator.strongPassword(16) end)
+
+bindKey(ctrlAltCmd, "P",
+    function()
+        spoon.PasswordGenerator.strongPassword(16, {
+            "ABCDEFGHIJKLMNPQRSTUVWXYZ", -- O
+            "abcdefghijklmnopqrstuvwxyz",
+            "123456789", -- 0
+            "!#$%&*+-./=?@_" -- '"`´:;,\()<>[]{}^~
+        })
+    end
+)
 
 --- Add a resource to https://carleslc.me/resources with the copied url
 spoon.Resources:bindHotkeys({ add = {ctrlAltCmd, "W"} })
