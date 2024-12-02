@@ -1,7 +1,7 @@
 bindKey = hs.hotkey.bind
 
 alert = hs.alert
-alert.defaultStyle.atScreenEdge = 1 -- Top
+alert.defaultStyle.atScreenEdge = 0 -- Center
 
 function notify(text, seconds, title)
 	title = title or "Hammerspoon"
