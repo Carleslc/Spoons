@@ -17,8 +17,10 @@ obj.license = "MIT - https://opensource.org/licenses/MIT"
 
 -- Utils
 
-function obj:notify(text)
-    hs.notify.new({title=obj.name, informativeText=text, withdrawAfter=3}):send()
+require("utils.hs")
+
+function obj:notify(text, seconds)
+    notify(text, seconds or 3, obj.name)
 end
 
 -- Configuration
@@ -57,11 +59,15 @@ function obj:add(url)
     if self.path == nil then
         self:notify("Resources.path is not set")
     else
-        output, status = hs.execute((self.python or "python3") .. " " .. self.path .. " --add --colorless " .. url, true)
+        local cmd = (self.python or "python3") .. " " .. self.path .. " --add --colorless " .. url
+        local output, status = hs.execute(cmd, true)
         if not status then
-            self:notify(output)
+            if not output or output == "" then
+                output = ('Error with command: ' .. cmd)
+            end
+            self:notify(output, 10)
         else
-            lines = output:split('\n')
+            local lines = output:split('\n')
             self:notify(lines[#lines-1]) -- Result last line
         end
     end
